@@ -1,0 +1,66 @@
+{
+  "author": {
+    "name": "021JGDEV",
+    "role": "Backend Dev & Roblox Systems Scripter",
+    "bio": "Desenvolvo sistemas integrados e soluções backend para jogos no Roblox Studio. Especializado em arquitetura de sistemas modulares, datastores, eventos remotos e automações que escalam.",
+    "discord": "021_jgdev.rj",
+    "avatar": "Contents/avatar.png"
+  },
+  "systems": [
+    {
+      "id": "sys-001",
+      "name": "InventoryCore",
+      "description": "Sistema de inventário modular com suporte a múltiplos tipos de itens, persistência via DataStore2 e sincronização em tempo real entre cliente e servidor. Suporta hotbar, drag-and-drop e tooltips dinâmicos.",
+      "gif": "Contents/inventorycore.gif",
+      "tags": ["DataStore", "RemoteEvents", "ModuleScript", "UI"],
+      "links": [
+        {
+          "label": "Ver no Roblox",
+          "url": "https://www.roblox.com/games/XXXXXXXXX"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "sys-002",
+      "name": "EconomyEngine",
+      "description": "Engine de economia interna com suporte a moedas, transações seguras server-side, histórico de compras e anti-exploit integrado. Inclui loja dinâmica carregada via RemoteFunction.",
+      "gif": "Contents/economyengine.gif",
+      "tags": ["Economy", "Anti-Exploit", "DataStore", "Server-Side"],
+      "links": [],
+      "featured": true
+    },
+    {
+      "id": "sys-003",
+      "name": "QuestFramework",
+      "description": "Framework de missões com suporte a objetivos sequenciais, paralelos e condicionais. Sistema de recompensas configurável via tabela e interface de progresso atualizada em tempo real.",
+      "gif": "Contents/questframework.gif",
+      "tags": ["Framework", "OOP", "ModuleScript", "UI"],
+      "links": [
+        {
+          "label": "Devforum Post",
+          "url": "https://devforum.roblox.com/t/XXXXXXXXX"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "sys-004",
+      "name": "AdminPanel",
+      "description": "Painel administrativo com permissões hierárquicas, log de ações, comandos de moderação e interface limpa acessível apenas a staff autorizado via GroupService.",
+      "gif": "Contents/adminpanel.gif",
+      "tags": ["Admin", "GroupService", "Permissions", "Logging"],
+      "links": [],
+      "featured": false
+    },
+    {
+      "id": "sys-005",
+      "name": "MatchmakingSystem",
+      "description": "Sistema de matchmaking com fila de espera, TeleportService para instâncias privadas, balanceamento de times e timer de countdown sincronizado via RemoteEvents.",
+      "gif": "Contents/matchmaking.gif",
+      "tags": ["TeleportService", "Matchmaking", "Teams", "Real-time"],
+      "links": [],
+      "featured": false
+    }
+  ]
+}
