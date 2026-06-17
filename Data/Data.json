@@ -11,7 +11,7 @@
       "id": "sys-001",
       "name": "InventoryCore",
       "description": "Sistema de inventário modular com suporte a múltiplos tipos de itens, persistência via DataStore2 e sincronização em tempo real entre cliente e servidor. Suporta hotbar, drag-and-drop e tooltips dinâmicos.",
-      "gif": "Contents/inventorycore.gif",
+      "gif": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnRleXAzaW13ZTdyaXNraXFwNXZnNGZ1NWhsZGhiMDBpOHB4a2xhZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x7ar7pSx8alobjqAvT/giphy.gif",
       "tags": ["DataStore", "RemoteEvents", "ModuleScript", "UI"],
       "links": [
         {
