@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio — Backend Dev & Roblox Systems Scripter" />
+  <title>robloxport · sistemas & backend</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+
+  <!-- ── Loader ───────────────────────────────── -->
+  <div id="loading" role="status" aria-label="Carregando">
+    <div class="loader-logo"><span>rbx</span>port</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <div class="loader-text">inicializando sistemas...</div>
+  </div>
+
+  <!-- ── Toast ────────────────────────────────── -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <!-- ── Layout ───────────────────────────────── -->
+  <div class="layout">
+
+    <!-- Sidebar / Nav -->
+    <aside class="sidebar" role="navigation" aria-label="Navegação principal">
+
+      <div class="sidebar-brand">
+        <div class="sidebar-brand-icon">RBX</div>
+        <div>
+          <div class="sidebar-brand-name" id="brand-name">robloxport</div>
+          <div class="sidebar-brand-sub">systems · backend</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">navegação</div>
+
+        <button class="nav-item active" data-section="hero" aria-label="Início">
+          <span class="nav-icon">⌂</span>
+          Home
+        </button>
+
+        <button class="nav-item" data-section="about" aria-label="Sobre mim">
+          <span class="nav-icon">◈</span>
+          Sobre mim
+        </button>
+
+        <button class="nav-item" data-section="projects" aria-label="Sistemas">
+          <span class="nav-icon">⊞</span>
+          Sistemas
+        </button>
+
+        <button class="nav-item" data-section="contact" aria-label="Contato">
+          <span class="nav-icon">◎</span>
+          Contato
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-badge">
+          <div class="status-dot"></div>
+          sistemas online
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- ── HERO ─────────────────────────────── -->
+      <section id="hero">
+
+        <div class="hero-terminal reveal">
+          <div class="terminal-bar">
+            <div class="terminal-dot"></div>
+            <div class="terminal-dot"></div>
+            <div class="terminal-dot"></div>
+            <div class="terminal-title">portfolio.lua — Roblox Studio</div>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <!-- preenchido pelo JS -->
+          </div>
+        </div>
+
+        <p class="section-eyebrow">backend dev &amp; scripter</p>
+
+        <h1 class="hero-name reveal">
+          Olá, eu sou<br />
+          <span id="hero-name">YourName</span>
+        </h1>
+
+        <p class="hero-role reveal">
+          Construo <em>sistemas integrados</em> para Roblox Studio ·
+          backend, datastores, frameworks
+        </p>
+
+        <div class="hero-cta reveal">
+          <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+            ↓ Ver sistemas
+          </button>
+          <button class="btn btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            ◎ Contato
+          </button>
+        </div>
+
+      </section>
+
+      <!-- ── ABOUT ─────────────────────────────── -->
+      <section id="about" class="section">
+
+        <div class="about-text">
+          <p class="section-eyebrow">sobre mim</p>
+          <h2 class="section-title reveal">Quem está<br />por trás dos scripts</h2>
+
+          <p class="about-bio-p reveal">
+            Desenvolvo sistemas integrados e soluções backend para jogos no Roblox Studio.
+          </p>
+          <p class="about-bio-p reveal">
+            Especializado em arquitetura de sistemas modulares, datastores e automações que escalam.
+          </p>
+
+          <div class="skills-block reveal">
+            <div class="skills-title">stack &amp; ferramentas</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Luau</span>
+              <span class="skill-tag">ModuleScript</span>
+              <span class="skill-tag">DataStore2</span>
+              <span class="skill-tag">RemoteEvents</span>
+              <span class="skill-tag">RemoteFunctions</span>
+              <span class="skill-tag">BindableEvents</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">Promises</span>
+              <span class="skill-tag">TeleportService</span>
+              <span class="skill-tag">GroupService</span>
+              <span class="skill-tag">MessagingService</span>
+              <span class="skill-tag">Roblox Studio</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-stats">
+            <div class="stat-card reveal">
+              <div class="stat-value">5+</div>
+              <div class="stat-label">sistemas publicados</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-value">∞</div>
+              <div class="stat-label">linhas de Luau</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-value">0</div>
+              <div class="stat-label">exploits passados</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-value">24/7</div>
+              <div class="stat-label">datastores online</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ── PROJECTS ───────────────────────────── -->
+      <section id="projects" class="section">
+
+        <div class="projects-header">
+          <p class="section-eyebrow">sistemas</p>
+          <h2 class="section-title reveal">O que foi construído</h2>
+          <p class="section-subtitle reveal">
+            Cada sistema foi desenvolvido com foco em performance,
+            modularidade e resistência a exploits.
+          </p>
+
+          <!-- filtros dinâmicos -->
+          <div class="projects-filter reveal" id="projects-filter">
+            <!-- preenchido pelo JS -->
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- cards dinâmicos via JS -->
+        </div>
+
+      </section>
+
+      <!-- ── CONTACT ────────────────────────────── -->
+      <section id="contact" class="section">
+
+        <div class="contact-info">
+          <p class="section-eyebrow">contato</p>
+          <h2 class="section-title reveal">Vamos conversar</h2>
+
+          <p class="reveal">
+            Tem um projeto em mente, quer discutir arquitetura de sistemas
+            ou apenas trocar ideia sobre desenvolvimento no Roblox?
+            Me chama no Discord.
+          </p>
+
+          <div class="discord-card reveal">
+            <div class="discord-icon">
+              <!-- Discord logo SVG inline -->
+              <svg width="26" height="20" viewBox="0 0 71 55" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60.1 4.9A58.5 58.5 0 0 0 45.5.4a40 40 0 0 0-1.8 3.7 54 54 0 0 0-16.3 0A38.5 38.5 0 0 0 25.6.4 58.4 58.4 0 0 0 11 5C1.6 19.4-1 33.4.3 47.3a58.9 58.9 0 0 0 18 9.1 42.5 42.5 0 0 0 3.7-6 38.4 38.4 0 0 1-5.8-2.8l1.4-1.1a41.9 41.9 0 0 0 36 0l1.4 1.1a38.4 38.4 0 0 1-5.8 2.8 42.5 42.5 0 0 0 3.7 6 58.7 58.7 0 0 0 18-9.1C72.5 31 69.2 17 60.1 4.9ZM23.8 39.1c-3.5 0-6.4-3.2-6.4-7.2s2.8-7.2 6.4-7.2 6.5 3.2 6.4 7.2-2.8 7.2-6.4 7.2Zm23.5 0c-3.5 0-6.4-3.2-6.4-7.2s2.8-7.2 6.4-7.2 6.4 3.2 6.4 7.2-2.8 7.2-6.4 7.2Z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="discord-label">Discord</div>
+              <div class="discord-handle" id="discord-handle">@youruser</div>
+            </div>
+            <button class="copy-btn" id="copy-discord" aria-label="Copiar handle do Discord">
+              copiar
+            </button>
+          </div>
+        </div>
+
+        <!-- ASCII art decorativo -->
+        <div class="contact-visual">
+          <div class="contact-art" aria-hidden="true"><span class="dim">┌─────────────────────────────┐
+│</span> <span class="cyan">status</span>: disponível         <span class="dim">│
+│</span> <span class="cyan">resposta</span>: &lt; 24h            <span class="dim">│
+│</span> <span class="cyan">idiomas</span>: pt-BR / en        <span class="dim">│
+│</span> <span class="cyan">foco</span>: sistemas Roblox      <span class="dim">│
+│</span> <span class="cyan">tipo</span>: freelance / collab   <span class="dim">│
+└─────────────────────────────┘</span></div>
+        </div>
+
+      </section>
+
+      <!-- ── Footer ─────────────────────────────── -->
+      <footer>
+        <span>// robloxport — carregado via Data.json</span>
+        <span id="footer-year"></span>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    // Ano dinâmico no footer
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
